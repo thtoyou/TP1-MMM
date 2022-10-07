@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departements">
+        <item>ain</item>
+        <item>aisne</item>
+        <item>allier</item>
+    </string-array>
+</resources>
