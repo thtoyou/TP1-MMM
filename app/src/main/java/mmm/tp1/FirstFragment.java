@@ -1,4 +1,4 @@
-package MMM.tp1;
+package mmm.tp1;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,7 +19,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import java.util.Calendar;
 
-import MMM.tp1.databinding.FragmentFirstBinding;
+import mmm.tp1.databinding.FragmentFirstBinding;
+
 
 public class FirstFragment extends Fragment {
 
@@ -40,6 +40,10 @@ public class FirstFragment extends Fragment {
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        Client client = new Client();
+        ClientViewModel clientViewModel = new ClientViewModel();
+        clientViewModel.setClient(client);
+        binding.setViewModel(clientViewModel);
         super.onViewCreated(view, savedInstanceState);
 
         binding.editTextPersonBirthDate.setOnClickListener((new View.OnClickListener() {

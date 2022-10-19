@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="MMM.tp1.ClientViewModel" />
+            type="mmm.tp1.ClientViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,6 +38,7 @@
             android:inputType="textPersonName"
             android:minWidth="100dp"
             android:minHeight="48dp"
+            android:text="@={viewModel.name}"
             app:layout_constraintBottom_toTopOf="@+id/editTextPersonFirstName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -54,6 +55,7 @@
             android:inputType="date"
             android:minWidth="100dp"
             android:minHeight="48dp"
+            android:text="@={viewModel.bDay}"
             app:layout_constraintBottom_toTopOf="@+id/editTextPersonBirthPlace"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +70,7 @@
             android:inputType="textPersonName"
             android:minWidth="100dp"
             android:minHeight="48dp"
+            android:text="@={viewModel.surName}"
             app:layout_constraintBottom_toTopOf="@+id/editTextPersonBirthDate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +85,7 @@
             android:inputType="textPersonName"
             android:minWidth="100dp"
             android:minHeight="48dp"
+            android:text="@={viewModel.birthPlace}"
             app:layout_constraintBottom_toTopOf="@+id/button_first"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -96,6 +100,7 @@
             android:hint="n° de téléphone"
             android:inputType="number"
             android:visibility="gone"
+            android:text="@={viewModel.phoneNumber}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

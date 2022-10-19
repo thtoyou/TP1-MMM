@@ -8,7 +8,7 @@ android {
         enabled = true;
     }
     defaultConfig {
-        applicationId "MMM.tp1"
+        applicationId "mmm.tp1"
         minSdk 26
         targetSdk 32
         versionCode 1

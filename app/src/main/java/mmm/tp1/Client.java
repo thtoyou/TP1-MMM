@@ -1,4 +1,4 @@
-package MMM.tp1;
+package mmm.tp1;
 
 public class Client {
     String name;
@@ -6,6 +6,15 @@ public class Client {
     String bDay;
     String birthPlace;
     String birthDept;
+    String PhoneNumber;
+
+    public String getPhoneNumber() {
+        return PhoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        PhoneNumber = phoneNumber;
+    }
 
     public String getName() {
         return name;
@@ -23,11 +32,12 @@ public class Client {
         this.surname = surname;
     }
 
-    public String getbDay() {
+
+    public String getBDay() {
         return bDay;
     }
 
-    public void setbDay(String bDay) {
+    public void setBDay(String bDay) {
         this.bDay = bDay;
     }
 
@@ -46,4 +56,5 @@ public class Client {
     public void setBirthDept(String birthDept) {
         this.birthDept = birthDept;
     }
+
 }

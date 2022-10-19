@@ -1,4 +1,4 @@
-package MMM.tp1;
+package mmm.tp1;
 
 import android.os.Bundle;
 
@@ -13,10 +13,11 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import MMM.tp1.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+
+import mmm.tp1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
